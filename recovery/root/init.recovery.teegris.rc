@@ -8,6 +8,7 @@ on fs
     mount ext4 /dev/block/by-name/sec_efs /efs nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
     mkdir /dev/socket/iwt 0770 system system
     mkdir /dev/socket/iwt/ca 0770 system system
+    mkdir /mnt/vendor/efs/tee 0700 system system
 
 on property:hwservicemanager.ready=true && property:crypto.ready=1
     start tz_service
