@@ -9,7 +9,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 33
+PRODUCT_TARGET_VNDK_VERSION := 31
 
 # API
 PRODUCT_SHIPPING_API_LEVEL := 32

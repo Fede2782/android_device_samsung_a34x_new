@@ -8,7 +8,7 @@
 # Only the below variable(s) need to be changed!
 #
 # Define hardware platform
-PRODUCT_PLATFORM := erd8835
+PRODUCT_PLATFORM := mt6877
 
 # The below variables will be generated automatically
 #
