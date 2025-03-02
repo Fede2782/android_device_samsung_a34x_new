@@ -19,7 +19,7 @@ do
 done;
 
 mkdir -p "/tmp/vendor";
-if mount -o ro "/dev/block/mapper/vendor" "/tmp/vendor"; then
+if mount -o ro "/dev/block/by-name/vendor" "/tmp/vendor"; then
   cp -a --preserve=all "/tmp/vendor/tee" "/vendor/"
 
   umount "/tmp/vendor";

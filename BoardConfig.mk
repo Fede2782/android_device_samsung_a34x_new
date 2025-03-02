@@ -39,16 +39,17 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
 BOARD_KERNEL_CMDLINE := \
     bootopt=64S3,32N2,64 \
-    loop.max_part=7 \
+    loop.max_part=7
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := \
     --dtb $(DEVICE_PATH)/prebuilt/dtb \
-    --ramdisk_offset 0 \
-    --dtb_offset 0 \
+    --ramdisk_offset 0x51100000 \
+    --dtb_offset 0x0000000047c80000 \
     --os_version 12.0.0 \
-    --tags_offset 0 \
+    --tags_offset 0x47c80000 \
     --board SRPVH09A001 \
-    --header_version 2
+    --header_version 2 \
+    --kernel_offset 0x40080000
 BOARD_ROOT_EXTRA_FOLDERS := \
     carrier \
     efs \
