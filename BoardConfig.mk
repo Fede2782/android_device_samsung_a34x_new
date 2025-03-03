@@ -6,7 +6,6 @@
 #
 
 # Architecture
-# Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
@@ -130,3 +129,8 @@ TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_LPDUMP := true
 TW_INCLUDE_LPTOOLS := true
+
+
+# TWRP Debug Flags
+TARGET_USES_LOGD := true
+TWRP_INCLUDE_LOGCAT := true
