@@ -6,4 +6,5 @@ ro.vendor.mtk_teegris_tee_support=1
 ro.vendor.mtk_tee_gp_support=1
 ro.hardware.kmsetkey=trustonic
 ro.vendor.mtk_svp_on_mtee_support=1
-persist.sys.usb.config=adb
+persist.sys.usb.config=mtp,adb
+sys.usb.config=mtp,adb
